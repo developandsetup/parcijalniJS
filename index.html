@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iTunes Search App</title>
+    <script src="javascript.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="search-input" placeholder="Search for songs..." oninput="searchSongs()" />
+    </div>
+    <div id="loader" class="loader"></div>
+    <div id="error-message"></div>
+    <table id="results-table">
+      <thead>
+        <tr>
+          <th>Song Name</th>
+          <th>Artist</th>
+        </tr>
+      </thead>
+      <tbody id="results-body"></tbody>
+    </table>
+    <script src="javascript.js"></script>
+  </body>
+</html>
